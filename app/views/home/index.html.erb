@@ -1,5 +1,13 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 
-<%=link_to "Sign in with instagram", user_omniauth_authorize_path(:instagram) %>
-<%= current_user.username %>
+<body>
+	<div class="login-dialogue">
+		<p>Get Gramming!</p>
+    <%=link_to user_omniauth_authorize_path(:instagram) do %>
+		  <button>log in with instagram</button>
+    <% end %>
+	</div>
+</body>
