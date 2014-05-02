@@ -67,7 +67,7 @@ body {
 
 }
 
-.content-container {
+.post-page-content-container {
 	position: absolute;
 	width: 100%;
 /*	border: solid 1px gray;
@@ -145,4 +145,14 @@ body {
 
 #columns:hover .pin:not(:hover) {
 	opacity: 0.4;
+}
+
+.posting-tool-container {
+	top: 0px;
+	right: 0px;
+	width: 400px;
+	height: 1900px;
+	background: red;
+	position: absolute;
+	z-index: +1;
 }
