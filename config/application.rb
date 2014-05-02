@@ -6,6 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Instagram.configure do |config|
+  config.client_id = ENV['INSTAGRAM_CLIENT_ID']
+  config.client_secret = ENV['INSTAGRAM_CLIENT_SECRET']
+end
+
 module Gramster
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
