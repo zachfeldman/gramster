@@ -5,7 +5,123 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script>
+	  $(function() {
+	    var availableTags = [
+		"Alabama", 
+		"Alaska",
+		"Arizona", 
+		"Arkansas", 
+		"California", 
+		"Colorado", 
+		"Connecticut", 
+		"Delaware",
+		"Florida",
+		"Georgia",
+		"Hawaii",
+		"Idaho",
+		"Illinois Indiana",
+		"Iowa",
+		"Kansas", 
+		"Kentucky",
+		"Louisiana", 
+		"Maine", 
+		"Maryland", 
+		"Massachusetts", 
+		"Michigan", 
+		"Minnesota", 
+		"Mississippi", 
+		"Missouri", 
+		"Montana Nebraska", 
+		"Nevada", 
+		"New Hampshire", 
+		"New Jersey", 
+		"New Mexico", 
+		"New York", 
+		"North Carolina", 
+		"North Dakota", 
+		"Ohio", 
+		"Oklahoma", 
+		"Oregon", 
+		"Pennsylvania", 
+		"Rhode Island",
+		"South Carolina", 
+		"South Dakota", 
+		"Tennessee", 
+		"Texas",
+		"Utah", 
+		"Vermont", 
+		"Virginia", 
+		"Washington", 
+		"West Virginia", 
+		"Wisconsin", 
+		"Wyoming"
+	    ];
+	    $( "#tags" ).autocomplete({
+	      source: availableTags
+	    });
+	  });
+  </script>
+  <script>
+	  $(function() {
+	    var availableTags = [
+		"Alabama", 
+		"Alaska",
+		"Arizona", 
+		"Arkansas", 
+		"California", 
+		"Colorado", 
+		"Connecticut", 
+		"Delaware",
+		"Florida",
+		"Georgia",
+		"Hawaii",
+		"Idaho",
+		"Illinois Indiana",
+		"Iowa",
+		"Kansas", 
+		"Kentucky",
+		"Louisiana", 
+		"Maine", 
+		"Maryland", 
+		"Massachusetts", 
+		"Michigan", 
+		"Minnesota", 
+		"Mississippi", 
+		"Missouri", 
+		"Montana Nebraska", 
+		"Nevada", 
+		"New Hampshire", 
+		"New Jersey", 
+		"New Mexico", 
+		"New York", 
+		"North Carolina", 
+		"North Dakota", 
+		"Ohio", 
+		"Oklahoma", 
+		"Oregon", 
+		"Pennsylvania", 
+		"Rhode Island",
+		"South Carolina", 
+		"South Dakota", 
+		"Tennessee", 
+		"Texas",
+		"Utah", 
+		"Vermont", 
+		"Virginia", 
+		"Washington", 
+		"West Virginia", 
+		"Wisconsin", 
+		"Wyoming"
+	    ];
+	    $( "#hashes" ).autocomplete({
+	      source: availableTags
+	    });
+	  });
+  </script>
 </head>
 <body>
 
