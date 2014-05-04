@@ -8,6 +8,8 @@
   border-bottom: 2px solid black;
   background-color: rgba(1,1,1, .5);
   display: block;
+  position: fixed;
+  top: 0;
 
   .fa {
     float: right;
@@ -17,7 +19,7 @@
 }
 
 
-#content {
-
+#sb-site {
+  margin-top: 30px !important;
 
 }
