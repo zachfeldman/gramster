@@ -1,0 +1,9 @@
+.menu {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid black;
+  background-color: rgba(1, 1, 1, 0.5);
+  display: block; }
+  .menu .fa {
+    float: right;
+    margin: 5px; }
