@@ -1,5 +1,20 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-
-<%=link_to "Sign in with instagram", user_omniauth_authorize_path(:instagram) %>
-<%= current_user.username %>
+<div class="entry-container">
+  <%=link_to user_omniauth_authorize_path(:instagram) do %>
+    <button class="login-button">LOGIN WITH INSTAGRAM</button>
+  <% end %>
+  <%= image_tag "hipster-heisenburg.svg", class: "hipster-image" %>
+</div>
+<div class="content-container">
+  <div id="wrapper">
+    <div id="columns">
+      <% @grams.each do |gram| %>
+        <div class="pin">
+          <img src="<%=gram[:image] %>" >
+          <p>
+            <%=gram[:tags] %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

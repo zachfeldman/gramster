@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'instagram'
+
+gem 'geocoder'
+
 gem 'devise'
 gem 'omniauth-instagram'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
